@@ -16,7 +16,8 @@ export default function CardDescription({
   src = "",
   Description = "",
   DescriptionStrong = "",
-  redirect = ""
+  redirect = "",
+  showButton = true
 }) {
   return (
     <Box maxWidth="100%">
@@ -37,9 +38,11 @@ export default function CardDescription({
         <Text as="p" size="3">
           <Strong>{DescriptionStrong}</Strong> {Description}
         </Text>
-        <Button asChild>
-          <a href={redirect} target="_blank" rel="noopener noreferrer">Ver proyecto</a>
-        </Button>
+        {showButton && redirect && (
+          <Button asChild style={{top: "1rem"}}>
+            <a href={redirect} target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+          </Button>
+        )}
       </Card>
     </Box>
   );

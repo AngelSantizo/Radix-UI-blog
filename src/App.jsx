@@ -54,7 +54,7 @@ function App() {
           onClick={() => setActiveTab("projects")}
           style={{fontSize: "1.2rem"}}
         >
-          Projects
+          Proyectos
         </TabNav.Link>
         <TabNav.Link 
           href="#contact" 
@@ -62,7 +62,7 @@ function App() {
           onClick={() => setActiveTab("contact")}
           style={{fontSize: "1.2rem"}}
         >
-          Contact
+          Contacto
         </TabNav.Link>
       </TabNav.Root>
 
@@ -87,32 +87,36 @@ function App() {
         </Container>
       </Box>
 
-      <Heading as="h2" style={{margin: "3rem", textAlign: "center"}}>About me</Heading>
+      <Heading as="h2" style={{margin: "3rem", textAlign: "center"}}>Sobre mi</Heading>
       <Flex align="center" direction="column" top="2" gap="2">
       <CardDescription src="public/assets/angel setup.png"
       DescriptionStrong="Aprendiz"
       Description="constante y disciplinado, en busqueda de nuevos conocimientos y experiencia que me permitan crecer y mejorar en el campo de la programación y desarrollo frontend. Proveniente de Guatemala, con un fuerte deseo de aprender y crecer."
+      showButton={false}
       />
       </Flex>
 
   
-      <Heading id="projects" as="h2" style={{margin: "3rem", textAlign: "center", scrollMarginTop: "4.5rem"}}>Projects</Heading>
+      <Heading id="projects" as="h2" style={{margin: "3rem", textAlign: "center", scrollMarginTop: "4.5rem"}}>Proyectos</Heading>
       <Container size="4">
         <Grid columns="2" gap="4" width="auto">
           <CardDescription
           src="public/assets/Choris page.png"
           DescriptionStrong="Choris"
           Description="Un proyecto hecho con la libreria Bootstrap, hecho dedicado a mi padre. (Negocio real)"
+          redirect="https://angelsantizo.github.io/Choris-page-/"
           />
           <CardDescription 
           src="public/assets/Proyecto relojeria.png"
           DescriptionStrong="Relojeria"
           Description="Un proyecto hecho con HTML y CSS nativo que incluye animaciones Javascript. Universidad"
+          redirect="https://app.netlify.com/projects/proyectoindividualangel/overview"
           />
           <CardDescription 
           src="public/assets/Proyecto cafe.png"
           DescriptionStrong="Blog de Cafe"
           Description="Uno de mis inicios en este mundo, un blog hecho con HTML y CSS nativo. Udemy"
+          redirect="https://tiendacafeteriaycursos.netlify.app/"
           />
           <CardDescription 
           src="public/assets/Proyecto react.png"
@@ -121,7 +125,7 @@ function App() {
           />
         </Grid>
       </Container>
-      <Heading id="contact" as="h2" style={{margin: "3rem", textAlign: "center", scrollMarginTop: "4.5rem"}}>Contact me</Heading>
+      <Heading id="contact" as="h2" style={{margin: "3rem", textAlign: "center", scrollMarginTop: "4.5rem"}}>Contactame</Heading>
 
       <Flex align="center" direction="column" gap="2" style={{marginBottom: "3rem"}}>
       <SocialMediaCards
