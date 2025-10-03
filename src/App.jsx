@@ -78,7 +78,7 @@ function App() {
           <Flex align="center" direction="column" top="2" gap="2">
             <Avatar
               size="8"
-              src="/assets/angel-foto.jpeg"
+              src="Radix-UI-blog/assets/angel-foto.jpeg"
               fallback="A"
             ></Avatar>
             <Heading as="h1" size="7" align="center">
@@ -92,7 +92,7 @@ function App() {
       <Separator my="3" size="4" />
       <Heading as="h2" style={{margin: "3rem", textAlign: "center"}}>Sobre mi</Heading>
       <Flex align="center" direction="column" top="2" gap="2">
-      <CardDescription src="/assets/angel setup.png"
+      <CardDescription src="Radix-UI-blog/assets/angel setup.png"
       DescriptionStrong="Aprendiz"
       Description="constante y disciplinado, en busqueda de nuevos conocimientos y experiencia que me permitan crecer y mejorar en el campo de la programación y desarrollo frontend. Proveniente de Guatemala, con un fuerte deseo de aprender y crecer."
       showButton={false}
@@ -104,7 +104,7 @@ function App() {
       <Container size="4">
         <Grid columns="2" gap="4" width="auto">
           <CardDescription
-          src="/assets/Choris page.png"
+          src="Radix-UI-blog/assets/Choris page.png"
           DescriptionStrong="Choris"
           Description="Un proyecto hecho con la libreria Bootstrap, hecho dedicado a mi padre. (Negocio real)"
           redirect="https://angelsantizo.github.io/Choris-page-/"
@@ -112,7 +112,7 @@ function App() {
           typeColor="green"
           />
           <CardDescription 
-          src="/assets/Proyecto relojeria.png"
+          src="Radix-UI-blog/assets/Proyecto relojeria.png"
           DescriptionStrong="Relojeria"
           Description="Un proyecto hecho con HTML y CSS nativo que incluye animaciones Javascript. Universidad"
           redirect="https://app.netlify.com/projects/proyectoindividualangel/overview"
@@ -120,7 +120,7 @@ function App() {
           typeColor="red"
           />
           <CardDescription 
-          src="/assets/Proyecto cafe.png"
+          src="Radix-UI-blog/assets/Proyecto cafe.png"
           DescriptionStrong="Blog de Cafe"
           Description="Uno de mis inicios en este mundo, un blog hecho con HTML y CSS nativo. Udemy"
           redirect="https://tiendacafeteriaycursos.netlify.app/"
@@ -128,7 +128,7 @@ function App() {
           typeColor="green"
           />
           <CardDescription 
-          src="/assets/Proyecto react.png"
+          src="Radix-UI-blog/assets/Proyecto react.png"
           DescriptionStrong="Este proyecto."
           Description="Un avance en mi aprendizaje, hecho con React y la libreria de diseño Radix UI"
           type="Responsive"
