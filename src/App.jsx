@@ -15,7 +15,8 @@ import {
   Inset,
   Strong,
   Grid,
-  Callout
+  Callout,
+  Separator
 } from "@radix-ui/themes";
 import CardDescription from "./Components/CardDescription";
 import SocialMediaCards from "./Components/SocialMediaCards";
@@ -88,6 +89,7 @@ function App() {
         </Container>
       </Box>
 
+      <Separator my="3" size="4" />
       <Heading as="h2" style={{margin: "3rem", textAlign: "center"}}>Sobre mi</Heading>
       <Flex align="center" direction="column" top="2" gap="2">
       <CardDescription src="public/assets/angel setup.png"
@@ -97,7 +99,7 @@ function App() {
       />
       </Flex>
 
-  
+      <Separator my="3" size="4" />
       <Heading id="projects" as="h2" style={{margin: "3rem", textAlign: "center", scrollMarginTop: "4.5rem"}}>Proyectos</Heading>
       <Container size="4">
         <Grid columns="2" gap="4" width="auto">
@@ -134,6 +136,7 @@ function App() {
           />
         </Grid>
       </Container>
+      <Separator my="3" size="4" />
       <Heading id="contact" as="h2" style={{margin: "3rem", textAlign: "center", scrollMarginTop: "4.5rem"}}>Contáctame</Heading>
 
       <Flex align="center" direction="column" gap="4" style={{marginBottom: "3rem"}}>
