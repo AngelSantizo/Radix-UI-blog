@@ -66,10 +66,33 @@ function App() {
           <CardDescription />
         </Grid>
       </Container>
-      <Heading as="h2" style={{marginBottom: "1rem"}}>Contact me</Heading>
-      <SocialMediaCards />
-      <SocialMediaCards />
-      <SocialMediaCards />
+      <Heading as="h2" style={{margin: "3rem", textAlign: "center"}}>Contact me</Heading>
+
+      <Flex align="center" direction="column" gap="2" style={{marginBottom: "2rem"}}>
+      <SocialMediaCards
+        platform="linkedin"
+        title="LinkedIn"
+        subtitle="Conecta conmigo"
+        bgColor="#0077B5"
+        link="https://www.linkedin.com/in/angel-santizo"
+      />
+
+      <SocialMediaCards
+        platform="github"
+        title="GitHub"
+        subtitle="Mira mis proyectos"
+        bgColor="#24292e"
+        link="https://github.com/angel-santizo"
+      />
+
+      <SocialMediaCards
+        platform="instagram"
+        title="Instagram"
+        subtitle="Sígueme"
+        bgColor="#940ee8"
+        link="https://www.instagram.com/angel-santizo"
+      />
+      </Flex>
       <ContactTab />
     </>
   );
