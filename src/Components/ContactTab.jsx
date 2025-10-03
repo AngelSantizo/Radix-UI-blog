@@ -47,7 +47,7 @@ export default function ContactTab() {
               color="gray"
               variant="ghost"
             >
-              <CopyIcon /> {/* <-- Now uses the defined or imported icon */}
+              <CopyIcon />
             </IconButton>
           </Flex>
         </DataList.Value>

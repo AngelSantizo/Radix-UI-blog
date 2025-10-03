@@ -41,7 +41,7 @@ function App() {
           <Flex align="center" direction="column" top="2" gap="2">
             <Avatar
               size="8"
-              src="/assets/angel-foto.jpeg"
+              src="public/assets/angel-foto.jpeg"
               fallback="A"
             ></Avatar>
             <Heading as="h1" size="7" align="center">
@@ -54,16 +54,31 @@ function App() {
 
       <Heading as="h2" style={{margin: "3rem", textAlign: "center"}}>About me</Heading>
       <Flex align="center" direction="column" top="2" gap="2">
-      <CardDescription />
+      <CardDescription src="public/assets/angel setup.png"
+      DescriptionStrong="Aprendiz"
+      Description="constante y disciplinado, en busqueda de nuevos conocimientos y experiencia que me permitan crecer y mejorar en el campo de la programación y desarrollo frontend. Proveniente de Guatemala, con un fuerte deseo de aprender y crecer."
+      />
       </Flex>
 
       <Heading as="h2" style={{margin: "3rem", textAlign: "center"}}>Projects</Heading>
       <Container size="4">
         <Grid columns="2" gap="4" width="auto">
-          <CardDescription />
-          <CardDescription />
-          <CardDescription />
-          <CardDescription />
+          <CardDescription
+          DescriptionStrong="Choris"
+          Description="Un proyecto hecho con la libreria Bootstrap, hecho dedicado a mi padre. (Negocio real)"
+          />
+          <CardDescription 
+          DescriptionStrong="Relojeria"
+          Description="Un proyecto hecho con HTML y CSS nativo que incluye animaciones Javascript. Universidad"
+          />
+          <CardDescription 
+          DescriptionStrong="Blog de Cafe"
+          Description="Uno de mis inicios en este mundo, un blog hecho con HTML y CSS nativo. Udemy"
+          />
+          <CardDescription 
+          DescriptionStrong="Este proyecto."
+          Description="Un avance en mi aprendizaje, hecho con React y la libreria de diseño Radix UI"
+          />
         </Grid>
       </Container>
       <Heading as="h2" style={{margin: "3rem", textAlign: "center"}}>Contact me</Heading>
