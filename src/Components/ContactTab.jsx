@@ -4,7 +4,8 @@ import {
   Badge,
   Code,
   IconButton,
-  Link, // <-- Added Link component
+  Link, 
+  Separator,
 } from "@radix-ui/themes";
 
 const CopyIcon = () => (
@@ -27,7 +28,7 @@ const CopyIcon = () => (
 export default function ContactTab() {
   // <-- Fixed component function syntax
   return (
-    <DataList.Root>
+    <DataList.Root size="3" variant="surface" layout="auto">
       <DataList.Item align="center">
         <DataList.Label minWidth="88px">Status</DataList.Label>
         <DataList.Value>
@@ -36,6 +37,7 @@ export default function ContactTab() {
           </Badge>
         </DataList.Value>
       </DataList.Item>
+      <Separator/>
       <DataList.Item>
         <DataList.Label minWidth="88px">Phone</DataList.Label>
         <DataList.Value>
@@ -52,9 +54,11 @@ export default function ContactTab() {
           </Flex>
         </DataList.Value>
       </DataList.Item>
+      <Separator/>
       <DataList.Item>
         <DataList.Label minWidth="88px">Email</DataList.Label>
         <DataList.Value>
+        <Separator orientation="vertical"/>
           <Link href="mailto:vlad@workos.com">aangelsanti12@gmail.com</Link>{" "}
           {/* <-- Link is now imported */}
         </DataList.Value>

@@ -21,14 +21,49 @@ import SocialMediaCards from "./Components/SocialMediaCards";
 import ContactTab from "./Components/ContactTab";
 
 function App() {
+  const [activeTab, setActiveTab] = useState("me");
+
   return (
     <>
-      <TabNav.Root justify="center" wrap="nowrap" highContrast="true" size="2" style={{height: "4rem"}}>
-        <TabNav.Link href="#" active style={{fontSize: "1.2rem"}}>
+      <TabNav.Root 
+        justify="center" 
+        wrap="nowrap" 
+        highContrast="false" 
+        size="2" 
+        style={{
+          height: "4rem",
+          position: "sticky",
+          top: 0,
+          zIndex: 1000,
+          backgroundColor: "var(--color-background)",
+          backdropFilter: "blur(8px)",
+          marginTop: "-5px"
+        }}
+      >
+        <TabNav.Link 
+          href="#me" 
+          active={activeTab === "me"}
+          onClick={() => setActiveTab("me")}
+          style={{fontSize: "1.2rem"}}
+        >
           Me
         </TabNav.Link>
-        <TabNav.Link href="#" style={{fontSize: "1.2rem"}}>Projects</TabNav.Link>
-        <TabNav.Link href="#" style={{fontSize: "1.2rem"}}>Contact</TabNav.Link>
+        <TabNav.Link 
+          href="#projects" 
+          active={activeTab === "projects"}
+          onClick={() => setActiveTab("projects")}
+          style={{fontSize: "1.2rem"}}
+        >
+          Projects
+        </TabNav.Link>
+        <TabNav.Link 
+          href="#contact" 
+          active={activeTab === "contact"}
+          onClick={() => setActiveTab("contact")}
+          style={{fontSize: "1.2rem"}}
+        >
+          Contact
+        </TabNav.Link>
       </TabNav.Root>
 
       <Box
@@ -47,7 +82,7 @@ function App() {
             <Heading as="h1" size="7" align="center">
               Angel Santizo
             </Heading>
-            <Text>FrontEnd Dev Junior</Text>
+            <Text id="me">FrontEnd Dev Junior</Text>
           </Flex>
         </Container>
       </Box>
@@ -60,7 +95,8 @@ function App() {
       />
       </Flex>
 
-      <Heading as="h2" style={{margin: "3rem", textAlign: "center"}}>Projects</Heading>
+  
+      <Heading id="projects" as="h2" style={{margin: "3rem", textAlign: "center", scrollMarginTop: "4.5rem"}}>Projects</Heading>
       <Container size="4">
         <Grid columns="2" gap="4" width="auto">
           <CardDescription
@@ -85,9 +121,9 @@ function App() {
           />
         </Grid>
       </Container>
-      <Heading as="h2" style={{margin: "3rem", textAlign: "center"}}>Contact me</Heading>
+      <Heading id="contact" as="h2" style={{margin: "3rem", textAlign: "center", scrollMarginTop: "4.5rem"}}>Contact me</Heading>
 
-      <Flex align="center" direction="column" gap="2" style={{marginBottom: "2rem"}}>
+      <Flex align="center" direction="column" gap="2" style={{marginBottom: "3rem"}}>
       <SocialMediaCards
         platform="linkedin"
         title="LinkedIn"
@@ -112,7 +148,7 @@ function App() {
         link="https://www.instagram.com/angel-santizo"
       />
       </Flex>
-      <ContactTab />
+      <ContactTab style={{paddingTop: "3rem", margin: "3rem"}}/>
     </>
   );
 }
