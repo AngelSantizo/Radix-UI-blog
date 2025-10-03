@@ -145,7 +145,7 @@ function App() {
         title="LinkedIn"
         subtitle="Conecta conmigo"
         bgColor="#0077B5"
-        link="https://www.linkedin.com/in/angel-santizo"
+        link="https://www.linkedin.com/in/angel-santizo-309745299/"
       />
 
       <SocialMediaCards
@@ -153,7 +153,7 @@ function App() {
         title="GitHub"
         subtitle="Mira mis proyectos"
         bgColor="#24292e"
-        link="https://github.com/angel-santizo"
+        link="https://github.com/AngelSantizo"
       />
 
       <SocialMediaCards
@@ -161,7 +161,7 @@ function App() {
         title="Instagram"
         subtitle="Sígueme"
         bgColor="#940ee8"
-        link="https://www.instagram.com/angel-santizo"
+        link="https://www.instagram.com/angel___sp/"
       />
       </Flex>
       <Callout.Root variant="surface" size="2" color="blue" style={{ textAlign: "center", bottom: "0", width: "100%"}}>
