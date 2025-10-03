@@ -124,7 +124,7 @@ function App() {
           DescriptionStrong="Blog de Cafe"
           Description="Uno de mis inicios en este mundo, un blog hecho con HTML y CSS nativo. Udemy"
           redirect="https://tiendacafeteriaycursos.netlify.app/"
-          type="No responsive"
+          type="Responsive"
           typeColor="green"
           />
           <CardDescription 
