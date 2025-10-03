@@ -10,6 +10,7 @@ import {
   Card,
   Inset,
   Strong,
+  Badge
 } from "@radix-ui/themes";
 
 export default function CardDescription({ 
@@ -17,7 +18,9 @@ export default function CardDescription({
   Description = "",
   DescriptionStrong = "",
   redirect = "",
-  showButton = true
+  showButton = true,
+  type="",
+  typeColor=""
 }) {
   return (
     <Box maxWidth="100%">
@@ -39,9 +42,11 @@ export default function CardDescription({
           <Strong>{DescriptionStrong}</Strong> {Description}
         </Text>
         {showButton && redirect && (
-          <Button asChild style={{top: "1rem"}}>
+          <><Button asChild style={{ top: "1rem" }}>
             <a href={redirect} target="_blank" rel="noopener noreferrer">Ver proyecto</a>
-          </Button>
+          </Button><Badge color={typeColor} variant="soft" radius="full">
+              {type}
+            </Badge></>
         )}
       </Card>
     </Box>

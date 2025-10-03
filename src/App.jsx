@@ -15,6 +15,7 @@ import {
   Inset,
   Strong,
   Grid,
+  Callout
 } from "@radix-ui/themes";
 import CardDescription from "./Components/CardDescription";
 import SocialMediaCards from "./Components/SocialMediaCards";
@@ -105,29 +106,37 @@ function App() {
           DescriptionStrong="Choris"
           Description="Un proyecto hecho con la libreria Bootstrap, hecho dedicado a mi padre. (Negocio real)"
           redirect="https://angelsantizo.github.io/Choris-page-/"
+          type="Responsive"
+          typeColor="green"
           />
           <CardDescription 
           src="public/assets/Proyecto relojeria.png"
           DescriptionStrong="Relojeria"
           Description="Un proyecto hecho con HTML y CSS nativo que incluye animaciones Javascript. Universidad"
           redirect="https://app.netlify.com/projects/proyectoindividualangel/overview"
+          type="No responsive"
+          typeColor="red"
           />
           <CardDescription 
           src="public/assets/Proyecto cafe.png"
           DescriptionStrong="Blog de Cafe"
           Description="Uno de mis inicios en este mundo, un blog hecho con HTML y CSS nativo. Udemy"
           redirect="https://tiendacafeteriaycursos.netlify.app/"
+          type="No responsive"
+          typeColor="green"
           />
           <CardDescription 
           src="public/assets/Proyecto react.png"
           DescriptionStrong="Este proyecto."
           Description="Un avance en mi aprendizaje, hecho con React y la libreria de diseño Radix UI"
+          type="Responsive"
+          typeColor="green"
           />
         </Grid>
       </Container>
-      <Heading id="contact" as="h2" style={{margin: "3rem", textAlign: "center", scrollMarginTop: "4.5rem"}}>Contactame</Heading>
+      <Heading id="contact" as="h2" style={{margin: "3rem", textAlign: "center", scrollMarginTop: "4.5rem"}}>Contáctame</Heading>
 
-      <Flex align="center" direction="column" gap="2" style={{marginBottom: "3rem"}}>
+      <Flex align="center" direction="column" gap="4" style={{marginBottom: "3rem"}}>
       <SocialMediaCards
         platform="linkedin"
         title="LinkedIn"
@@ -152,7 +161,11 @@ function App() {
         link="https://www.instagram.com/angel-santizo"
       />
       </Flex>
-      <ContactTab style={{paddingTop: "3rem", margin: "3rem"}}/>
+      <Callout.Root variant="surface" size="2" color="blue" style={{ textAlign: "center", bottom: "0", width: "100%"}}>
+        <Callout.Text>
+          Derechos reservados Angel Santizo 2025.
+        </Callout.Text>
+      </Callout.Root>
     </>
   );
 }
