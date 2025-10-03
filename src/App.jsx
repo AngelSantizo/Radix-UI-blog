@@ -92,7 +92,7 @@ function App() {
       <Separator my="3" size="4" />
       <Heading as="h2" style={{margin: "3rem", textAlign: "center"}}>Sobre mi</Heading>
       <Flex align="center" direction="column" top="2" gap="2">
-      <CardDescription src="/Radix-UI-blog/assets/angel setup.png"
+      <CardDescription src="/Radix-UI-blog/assets/Angel setup.png"
       DescriptionStrong="Aprendiz"
       Description="constante y disciplinado, en busqueda de nuevos conocimientos y experiencia que me permitan crecer y mejorar en el campo de la programación y desarrollo frontend. Proveniente de Guatemala, con un fuerte deseo de aprender y crecer."
       showButton={false}
