@@ -37,7 +37,7 @@ function App() {
           borderRadius: "var(--radius-3)",
         }}
       >
-        <Container size="4" align="center" style={{ marginTop: "2rem", paddingBottom: "2rem" }}>
+        <Container size="4" align="center" style={{ marginTop: "2rem", paddingBottom: "2rem", paddingTop: "2rem" }}>
           <Flex align="center" direction="column" top="2" gap="2">
             <Avatar
               size="8"
@@ -64,18 +64,22 @@ function App() {
       <Container size="4">
         <Grid columns="2" gap="4" width="auto">
           <CardDescription
+          src="public/assets/Choris page.png"
           DescriptionStrong="Choris"
           Description="Un proyecto hecho con la libreria Bootstrap, hecho dedicado a mi padre. (Negocio real)"
           />
           <CardDescription 
+          src="public/assets/Proyecto relojeria.png"
           DescriptionStrong="Relojeria"
           Description="Un proyecto hecho con HTML y CSS nativo que incluye animaciones Javascript. Universidad"
           />
           <CardDescription 
+          src="public/assets/Proyecto cafe.png"
           DescriptionStrong="Blog de Cafe"
           Description="Uno de mis inicios en este mundo, un blog hecho con HTML y CSS nativo. Udemy"
           />
           <CardDescription 
+          src="public/assets/Proyecto react.png"
           DescriptionStrong="Este proyecto."
           Description="Un avance en mi aprendizaje, hecho con React y la libreria de diseño Radix UI"
           />
