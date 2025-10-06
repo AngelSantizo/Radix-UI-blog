@@ -90,7 +90,7 @@ function App() {
       </Box>
 
       <Separator my="3" size="4" />
-      <Heading as="h2" style={{margin: "3rem", textAlign: "center"}}>Sobre mi</Heading>
+      <Heading as="h2" style={{margin: "3rem", textAlign: "center", textShadow: "1px 10px 5px rgba(192, 191, 193, 0.5)"}}>Sobre mi</Heading>
       <Flex align="center" direction="column" top="2" gap="2">
       <CardDescription src="/assets/Angel setup.png"
       DescriptionStrong="Aprendiz"
@@ -100,7 +100,7 @@ function App() {
       </Flex>
 
       <Separator my="3" size="4" />
-      <Heading id="projects" as="h2" style={{margin: "3rem", textAlign: "center", scrollMarginTop: "4.5rem"}}>Proyectos</Heading>
+      <Heading id="projects" as="h2" style={{margin: "3rem", textAlign: "center", scrollMarginTop: "4.5rem", textShadow: "1px 10px 5px rgba(192, 191, 193, 0.5)" }}>Proyectos</Heading>
       <Container size="4">
         <Grid columns="2" gap="4" width="auto">
           <CardDescription
@@ -137,7 +137,7 @@ function App() {
         </Grid>
       </Container>
       <Separator my="3" size="4" />
-      <Heading id="contact" as="h2" style={{margin: "3rem", textAlign: "center", scrollMarginTop: "4.5rem"}}>Contáctame</Heading>
+      <Heading id="contact" as="h2" style={{margin: "3rem", textAlign: "center", scrollMarginTop: "4.5rem", textShadow: "1px 10px 5px rgba(192, 191, 193, 0.5)"}}>Contáctame</Heading>
 
       <Flex align="center" direction="column" gap="4" style={{marginBottom: "3rem"}}>
       <SocialMediaCards
