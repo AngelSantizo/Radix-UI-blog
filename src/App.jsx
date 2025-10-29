@@ -21,6 +21,8 @@ import {
 import CardDescription from "./Components/CardDescription";
 import SocialMediaCards from "./Components/SocialMediaCards";
 import ContactTab from "./Components/ContactTab";
+import AnimatedText from "./Components/AnimatedText";
+import { paddingPropDefs } from "@radix-ui/themes/dist/esm/props/padding.props.js";
 
 function App() {
   const [activeTab, setActiveTab] = useState("me");
@@ -91,11 +93,24 @@ function App() {
 
       <Separator my="3" size="4" />
       <Heading as="h2" style={{margin: "3rem", textAlign: "center", textShadow: "1px 10px 5px rgba(192, 191, 193, 0.5)"}}>Sobre mi</Heading>
+
+      <Heading as="h2" size="8" style={{marginBottom: "2rem"}}>El programador que solo <AnimatedText words={["aprende", "diseña", "piensa", "crea", "innova"]} /></Heading>
+      <Separator my="1" size="4" />
+      <Grid columns="2" gap="2" width="auto">
+        <Box style={{marginTop: "1rem", marginBottom: "2rem"}}>
+          <Heading as="h2" size="3">¿Quien?</Heading>
+          <Text>Joven Guatemaltéco en busqueda de aprender y crecer en el campo de la programación y desarrollo web, así como en el múndo tecnológico en general, brindando soluciones y pensamiento crítico a problemas que se presenten.</Text>
+        </Box>
+        <Box style={{marginTop: "1rem", marginBottom: "2rem", borderLeft: "2px solid #272a2d", paddingLeft: "2rem"}}>
+          <Heading as="h2" size="3">¿Por qué?</Heading>
+          <Text>Autodidácta y aprendiz constante, capacitándose en el cámpo que le permita destacar y crecer. Con una Filosofía de aprender y no generár, el conocimiento gana valor y se aplica en la vida cotidiana.</Text>
+        </Box>
+      </Grid>
       <Flex align="center" direction="column" top="2" gap="2">
-      <CardDescription src="/assets/Angel setup.png"
+      <CardDescription id="me" src="/assets/Angel setup.png"
       DescriptionStrong="Aprendiz"
       Description="constante y disciplinado, en busqueda de nuevos conocimientos y experiencia que me permitan crecer y mejorar en el campo de la programación y desarrollo frontend. Proveniente de Guatemala, con un fuerte deseo de aprender y crecer."
-      showButton={false}
+      showButton={false} style={{margin: "2rem", padding: "2rem"}}
       />
       </Flex>
 
@@ -164,11 +179,10 @@ function App() {
         link="https://www.instagram.com/angel___sp/"
       />
       </Flex>
-      <Callout.Root variant="surface" size="2" color="blue" style={{ textAlign: "center", bottom: "0", width: "100%"}}>
-        <Callout.Text>
-          Derechos reservados Angel Santizo 2025.
-        </Callout.Text>
-      </Callout.Root>
+      <Box width="100%" height="2rem" style={{textAlign: "center", marginTop: "2rem", color: "gray"}}>
+        <Separator size="4"></Separator>
+        <Text style={{marginTop: "1rem"}}>Derechos reservados Angel Santizo 2025</Text>
+      </Box>
     </>
   );
 }
